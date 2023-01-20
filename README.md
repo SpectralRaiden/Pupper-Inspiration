@@ -22,3 +22,15 @@ WHEN I can select music, toggle between light and dark modes, and be provided a 
 ## Screenshot of Webpage
 ```
 ```
+
+## Description
+```
+This webpage allows users to interact with Spotify's API to listen to music, while dynamically generating random insprational quotes when the user changes songs on the webpage. 
+```
+## Credits
+```
+Harrison Tran-Chung (github: htranchung)
+Jacob Murray (github: jakeskata)
+Jeremy Shimetz (github: jshimetz)
+Joshua Spencer (github: SpectralRaiden)
+```
