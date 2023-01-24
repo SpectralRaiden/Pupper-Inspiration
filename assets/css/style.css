@@ -5,6 +5,7 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 header {
@@ -19,7 +20,7 @@ nav a {
     color: white;
     font-size: 20px;
     transition: 0.4s;
-    
+
 }
 
 nav a:hover {
@@ -27,6 +28,94 @@ nav a:hover {
     color: black;
 }
 
+footer {
+    /* CHANGE PADDING LATER  */
+    text-align: center;
+    background: hsl(0, 0%, 0%, .7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+
+}
+
+footer p {
+    color: white;
+    text-decoration: underline;
+}
+
+.socialMedia {
+    display: inline-block;
+    width: 110px;
+    font-size: 20px;
+    padding-right: 100px;
+    line-height: 2.5;
+}
+
+.socialMedia a:hover {
+    background-color: #ddd;
+    transition: 0.4s;
+    color: black;
+    border-radius: 5px;
+}
+
+.navUseful {
+    display: inline-block;
+    width: 165px;
+    font-size: 20px;
+    line-height: 1.7;
+    padding-left: 50px;
+}
+
+.navUseful a:hover {
+    background-color: #ddd;
+    transition: 0.4s;
+    color: black;
+    border-radius: 5px;
+}
+
+.contact {
+    display: inline-block;
+    width: 157px;
+    font-size: 20px;
+    padding-left: 100px;
+    line-height: 1.7;
+}
+
+.contact a:hover {
+    background-color: #ddd;
+    transition: 0.4s;
+    color: black;
+    border-radius: 5px;
+}
+
 h2 {
     text-align: center;
+}
+
+.follow {
+    line-height: 25px;
+}
+
+hr {
+    width: 80%;
+}
+
+@media screen and (max-width: 840px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav,
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
