@@ -1,3 +1,4 @@
+
 /**
  * This is an example of a basic node.js script that performs
  * the Client Credentials oAuth2 flow to authenticate against
@@ -41,3 +42,17 @@ request.post(authOptions, function(error, response, body) {
     });
   }
 });
+=======
+fetch("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", {
+    method: 'GET',
+    credentials: 'same-origin',
+    redirect: 'follow',
+})
+.then (function (response) {
+    return response.json();
+})
+
+// access data points in response
+// append data to JS
+// 'append' command
+
