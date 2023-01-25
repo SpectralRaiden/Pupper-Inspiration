@@ -37,14 +37,39 @@
         </section>
     </main>
 
-    <!-- add horizontal rule in CSS -->
+    <button class="openModal">Click Me</button>
+    <dialog open class="bgmodal" >
+        <div class="modalContent">
+            <div class="close" id="closeModal">+</div>
+            <h1>Contact Us</h1>
 
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"></small>
+
+            <label for="name">Email:</label>
+            <input type="text" id="email" placeholder="Your Email">
+            <small class="error"></small>
+
+            <label for="name">Message:</label>
+            <textarea type="text" id="message" placeholder="Message" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+            </div>
+        </div>
+
+    </dialog>
+
+    <!-- add horizontal rule in CSS -->
     <footer>
         <div class="socialMedia">
             <p class="follow">Follow Us</p>
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="https://github.com/htranchung"><i class="fa-brands fa-github"></i> Harrison</a>
+            <a href="https://github.com/SpectralRaiden"><i class="fa-brands fa-github"></i> Joshua</a>
+            <a href="https://github.com/jshimetz"><i class="fa-brands fa-github"></i> Jeremy</a>
+            <a href="https://github.com/jakeskata"><i class="fa-brands fa-github"></i> Jacob</a>
         </div>
         <div class="navUseful">
             <p>Go To</p>
@@ -63,11 +88,9 @@
         <hr>
         <p class="copyright"><small>&copy; 2023 J<sup>3</sup>H</small></p>
     </footer>
-    
-    <script
-    src="https://code.jquery.com/jquery-3.6.3.slim.js"
-    integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
-    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.js"
+        integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
