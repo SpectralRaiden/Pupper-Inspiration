@@ -29,7 +29,6 @@ nav a:hover {
 }
 
 footer {
-    /* CHANGE PADDING LATER  */
     text-align: center;
     background: hsl(0, 0%, 0%, .7);
     position: absolute;
@@ -37,8 +36,6 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-
-
 }
 
 footer p {
@@ -48,10 +45,11 @@ footer p {
 
 .socialMedia {
     display: inline-block;
-    width: 110px;
+    width: 95px;
     font-size: 20px;
-    padding-right: 100px;
-    line-height: 2.5;
+    line-height: 1.7;
+    text-align: left;
+    margin-right: 25px;
 }
 
 .socialMedia a:hover {
@@ -66,7 +64,8 @@ footer p {
     width: 165px;
     font-size: 20px;
     line-height: 1.7;
-    padding-left: 50px;
+    text-align: left;
+    margin-left: 50px;
 }
 
 .navUseful a:hover {
@@ -80,8 +79,9 @@ footer p {
     display: inline-block;
     width: 157px;
     font-size: 20px;
-    padding-left: 100px;
+    text-align: left;
     line-height: 1.7;
+    margin-left: 45px;
 }
 
 .contact a:hover {
@@ -89,6 +89,11 @@ footer p {
     transition: 0.4s;
     color: black;
     border-radius: 5px;
+}
+
+.copyright {
+    text-align: center;
+    padding-right: 135px;
 }
 
 h2 {
@@ -112,6 +117,7 @@ hr {
 }
 
 @media screen and (max-width: 450px) {
+
     nav,
     .copyright {
         display: flex;
