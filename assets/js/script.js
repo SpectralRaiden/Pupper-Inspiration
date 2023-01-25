@@ -21,7 +21,7 @@ fetch('https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json')
   });
 
   console.log(response)
-=======
+
 var openModal = document.querySelector(".openModal");
 var closeModal = document.querySelector("#closeModal")
 
@@ -72,7 +72,7 @@ $("document").ready(function () {
 // .then (function (response) {
 //     return response.json();
 // })
-//===========
+
 
 /**
  * This is an example of a basic node.js script that performs
