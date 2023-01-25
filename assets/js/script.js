@@ -1,24 +1,38 @@
-$("document").ready(function() {
+var openModal = document.querySelector(".openModal");
+var closeModal = document.querySelector("#closeModal")
 
-    var url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
-  
+
+openModal.addEventListener("click", function () {
+  document.querySelector(".bgmodal").style.display = 'flex';
+});
+
+closeModal.addEventListener("click", function () {
+  document.querySelector(".bgmodal").style.display = 'none';
+});
+
+
+
+$("document").ready(function () {
+
+  var url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
+
+  loadQuote();
+
+  $("#newQuote").on("click", function () {
+    $("#quote-block").hide();
     loadQuote();
-  
-    $("#newQuote").on("click",function() {
-      $("#quote-block").hide();
-      loadQuote();
-    });
+  });
 }
 
     function loadQuote() {
-        var random = Math.floor(Math.random()*10);
-        $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(result){
-          //response data are now in the result variable
-          //$(".quote").css("display","none");
-          //   $(".author").css("display","none");
-          $(".quote").html(result.quoteText);
-      
-          $(".author").html(result.quoteAuthor);
+    var random = Math.floor(Math.random() * 10);
+    $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function (result) {
+      //response data are now in the result variable
+      //$(".quote").css("display","none");
+      //   $(".author").css("display","none");
+      $(".quote").html(result.quoteText);
+
+      $(".author").html(result.quoteAuthor);
     }
 }
 
