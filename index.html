@@ -37,6 +37,31 @@
         </section>
     </main>
 
+    <button class="openModal">Click Me</button>
+    <dialog open class="bgmodal" >
+        <div class="modalContent">
+            <div class="close" id="closeModal">+</div>
+            <h1>Contact Us</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"></small>
+
+            <label for="name">Email:</label>
+            <input type="text" id="email" placeholder="Your Email">
+            <small class="error"></small>
+
+            <label for="name">Message:</label>
+            <textarea type="text" id="message" placeholder="Message" rows="6"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+            </div>
+        </div>
+
+    </dialog>
+
     <!-- add horizontal rule in CSS -->
     <footer>
         <div class="socialMedia">
@@ -69,4 +94,4 @@
     <script src="./assets/js/script.js"></script>
 </body>
 
-</html>     
+</html>
