@@ -1,3 +1,27 @@
+
+const inspQuotes = document.getElementById('inspQuotes');
+
+fetch('https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json')
+  .then(response => response.json())
+  .then(data => {
+    
+    const quoteText = document.createElement('p');
+    quoteText.innerText = data.quoteText;
+
+    
+    const quoteAuthor = document.createElement('p');
+    quoteAuthor.innerText = data.quoteAuthor;
+
+    
+    inspQuotes.appendChild(quoteText);
+    inspQuotes.appendChild(quoteAuthor);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+  console.log(response)
+=======
 var openModal = document.querySelector(".openModal");
 var closeModal = document.querySelector("#closeModal")
 
@@ -39,6 +63,7 @@ $("document").ready(function () {
 
 
 
+
 // fetch("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", {
 //     method: 'getQuote',
 //     format: 'json',
@@ -47,7 +72,7 @@ $("document").ready(function () {
 // .then (function (response) {
 //     return response.json();
 // })
-=======
+//===========
 
 /**
  * This is an example of a basic node.js script that performs
@@ -92,17 +117,4 @@ request.post(authOptions, function(error, response, body) {
     });
   }
 });
-=======
-fetch("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", {
-    method: 'GET',
-    credentials: 'same-origin',
-    redirect: 'follow',
-})
-.then (function (response) {
-    return response.json();
-})
-
-// access data points in response
-// append data to JS
-// 'append' command
 
