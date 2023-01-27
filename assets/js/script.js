@@ -1,5 +1,5 @@
 const api_url ="https://zenquotes.io/api/random/";
-const ul = document.querySelector('.quote-list');
+const div = document.querySelector('.quote-list');
 
 async function getapi(url)
 {
@@ -7,7 +7,7 @@ async function getapi(url)
   var data = await response.json();
   console.log(data[0].q);
 
-  ul.innerHTML += `<div>${data[0].q}</div>`;
+  div.innerHTML += `<div>${data[0].q}</div>`;
 }
 
 getapi(api_url);
@@ -35,7 +35,6 @@ getapi(api_url);
 
 var openModal = document.querySelector(".openModal");
 var closeModal = document.querySelector("#closeModal");
-var sendMessage = document.querySelector("#sendMessage");
 
 openModal.addEventListener("click", function () {
   document.querySelector(".bgmodal").style.display = 'flex';
@@ -44,12 +43,6 @@ openModal.addEventListener("click", function () {
 closeModal.addEventListener("click", function () {
   document.querySelector(".bgmodal").style.display = 'none';
 });
-
-
-// sendMessage.addEventListener("click", function () {
-//   document.querySelector(".bgmodal").style.display = 'none';
-// });
-
 
 /**
  * This is an example of a basic node.js script that performs
