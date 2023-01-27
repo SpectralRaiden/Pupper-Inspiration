@@ -39,6 +39,27 @@ getapi(api_url);
 //     console.error('Error:', error);
 //   });
 
+// var requestUrl = 
+// 'https://dog.ceo/api/breeds/image/random';
+
+// var clickButton = document.getElementById('clickButton');
+// var image = document.getElementById("image");
+
+// clickButton.addEventListener("click", function () {
+//   fetch(requestUrl)
+//   .then(function (response) {
+//       return response.json();
+//   })
+//   .then(function (data) {
+//     console.log(data)
+//     display_image(data.message)
+//     image.classList.add('randomDog');
+//   })
+// });
+
+// function display_image(img) {
+//  document.getElementById("image").src = img;
+
 var openModal = document.querySelector(".openModal");
 var closeModal = document.querySelector("#closeModal")
 
@@ -96,4 +117,3 @@ request.post(authOptions, function(error, response, body) {
     });
   }
 });
-
