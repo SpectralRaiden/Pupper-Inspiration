@@ -7,37 +7,10 @@ async function getapi(url)
   var data = await response.json();
   console.log(data[0].q);
 
-  ul.innerHTML += `<li>${data[0].q}</li>`;
+  ul.innerHTML += `<div>${data[0].q}</div>`;
 }
 
 getapi(api_url);
-
-// const inspQuotes = document.getElementById('inspQuotes');
-
-// fetch('https://zenquotes.io/api/random', {
-//   method: 'GET',
-//   headers: {
-//     'Content-Type': 'application/json',
-//     'Access-Control-Allow-Origin':'*'
-//   }
-// })
-//   .then(response => response.json())
-//   .then(data => {
-    
-//     const quoteText = document.createElement('p');
-//     quoteText.innerText = data.quoteText;
-
-    
-//     const quoteAuthor = document.createElement('p');
-//     quoteAuthor.innerText = data.quoteAuthor;
-
-    
-//     inspQuotes.appendChild(quoteText);
-//     inspQuotes.appendChild(quoteAuthor);
-//   })
-//   .catch(error => {
-//     console.error('Error:', error);
-//   });
 
 // var requestUrl = 
 // 'https://dog.ceo/api/breeds/image/random';
@@ -61,8 +34,8 @@ getapi(api_url);
 //  document.getElementById("image").src = img;
 
 var openModal = document.querySelector(".openModal");
-var closeModal = document.querySelector("#closeModal")
-
+var closeModal = document.querySelector("#closeModal");
+var sendMessage = document.querySelector("#sendMessage");
 
 openModal.addEventListener("click", function () {
   document.querySelector(".bgmodal").style.display = 'flex';
@@ -72,6 +45,10 @@ closeModal.addEventListener("click", function () {
   document.querySelector(".bgmodal").style.display = 'none';
 });
 
+
+// sendMessage.addEventListener("click", function () {
+//   document.querySelector(".bgmodal").style.display = 'none';
+// });
 
 
 /**

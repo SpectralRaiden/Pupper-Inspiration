@@ -32,14 +32,14 @@
             <section id="insp-Quotes">
                 <p>Select a song for a quote or click the button below:</p>
                 <!-- quotes will output & display in div -->
-                <div></div>
+                <div class="quote-list"></div>
             </section>
         </section>
     </main>
-    <button id="clickButton"></button>
+    <!-- <button id="clickButton"></button>
     <img id="image">
-
-    <div id="catFact"></div>
+    <div class="quote-list"></div>
+    <div id="catFact"></div> -->
 
     <!-- add horizontal rule in CSS -->
     <footer>
@@ -73,11 +73,9 @@
         
                     <label for="name">Message:</label>
                     <textarea type="text" id="message" placeholder="Message" rows="6"></textarea>
-        
-                    <div class="center">
-                        <input type="submit" value="Send Message">
-                        <p id="clickSubmit"></p>
-                    </div>
+
+                    <button method="post" class="sendMessage">Send Message</button>
+
                 </div>
             </form>
         </div>
