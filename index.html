@@ -36,31 +36,10 @@
             </section>
         </section>
     </main>
+    <button id="clickButton"></button>
+    <img id="image">
 
-    <button class="openModal">Click Me</button>
-    <dialog open class="bgmodal" >
-        <div class="modalContent">
-            <div class="close" id="closeModal">+</div>
-            <h1>Contact Us</h1>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your Name">
-            <small class="error"></small>
-
-            <label for="name">Email:</label>
-            <input type="text" id="email" placeholder="Your Email">
-            <small class="error"></small>
-
-            <label for="name">Message:</label>
-            <textarea type="text" id="message" placeholder="Message" rows="6"></textarea>
-            <small class="error"></small>
-
-            <div class="center">
-                <input type="submit" value="Send Message">
-            </div>
-        </div>
-
-    </dialog>
+    <div id="catFact"></div>
 
     <!-- add horizontal rule in CSS -->
     <footer>
@@ -80,10 +59,27 @@
         </div>
         <div class="contact">
             <p>Contact Us</p>
-            <a href=""><i class="fa fa-home"></i> United States</a>
-            <a href=""><i class="fa fa-envelope"></i> info@mail.com</a>
-            <a href=""><i class="fa fa-phone"></i> + 01 234 567 88</a>
-            <a href=""><i class="fa fa-print"></i> + 01 234 567 89</a>
+            <button class="openModal">Click Me</button>
+            <form class="bgmodal">
+                <div class="modalContent">
+                    <div class="close" id="closeModal">+</div>
+                    <h1>Contact Us</h1>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your Name">
+        
+                    <label for="name">Email:</label>
+                    <input type="text" id="email" placeholder="Your Email">
+        
+                    <label for="name">Message:</label>
+                    <textarea type="text" id="message" placeholder="Message" rows="6"></textarea>
+        
+                    <div class="center">
+                        <input type="submit" value="Send Message">
+                        <p id="clickSubmit"></p>
+                    </div>
+                </div>
+            </form>
         </div>
         <hr>
         <p class="copyright"><small>&copy; 2023 J<sup>3</sup>H</small></p>
