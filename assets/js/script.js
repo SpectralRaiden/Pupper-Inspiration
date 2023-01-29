@@ -54,14 +54,13 @@ closeModal.addEventListener("click", function () {
  * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
  */
 
-html
-
-head>
-
-request = require => ('request'); // "Request" library
-
+<<<<<<<<< Temporary merge branch 1
 /* var request = require('request'); // "Request" library
-7a035d061284f07ecdbab36a58b24657be369133
+=========
+
+var request = require => ('request'); // "Request" library
+
+>>>>>>>>> Temporary merge branch 2
 
 var client_id = 'CLIENT_ID'; // Your client id
 var client_secret = 'CLIENT_SECRET'; // Your secret
