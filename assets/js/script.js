@@ -54,9 +54,12 @@ closeModal.addEventListener("click", function () {
  * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
  */
 
+potifyapi
 
 var request = require => ('request'); // "Request" library
 
+/* var request = require('request'); // "Request" library
+main
 
 var client_id = 'CLIENT_ID'; // Your client id
 var client_secret = 'CLIENT_SECRET'; // Your secret
@@ -93,4 +96,13 @@ request.post(authOptions, function(error, response, body) {
       console.log(body);
     });
   }
-});
+}); */
+
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  let element = document.getElementById('embed-iframe');
+  let options = {
+      uri: 'https://open.spotify.com/playlist/2LNYYUNZGpLRlKjlAsy3Yo'
+    };
+  let callback = (EmbedController) => {};
+  IFrameAPI.createController(element, options, callback);
+};
