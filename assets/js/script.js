@@ -54,12 +54,13 @@ closeModal.addEventListener("click", function () {
  * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
  */
 
-potifyapi
+ 
+/* var request = require('request'); // "Request" library
+=========
 
 var request = require => ('request'); // "Request" library
 
-/* var request = require('request'); // "Request" library
-main
+>>>>>>>>> Temporary merge branch 2
 
 var client_id = 'CLIENT_ID'; // Your client id
 var client_secret = 'CLIENT_SECRET'; // Your secret
@@ -97,6 +98,7 @@ request.post(authOptions, function(error, response, body) {
     });
   }
 }); */
+
 
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   let element = document.getElementById('embed-iframe');
