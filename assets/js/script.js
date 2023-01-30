@@ -54,7 +54,7 @@ closeModal.addEventListener("click", function () {
  * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
  */
 
-<<<<<<<<< Temporary merge branch 1
+ 
 /* var request = require('request'); // "Request" library
 =========
 
@@ -99,7 +99,6 @@ request.post(authOptions, function(error, response, body) {
   }
 }); */
 
-<body>
 
 window.onSpotifyIframeApiReady = (IFrameAPI) => {
   let element = document.getElementById('embed-iframe');
