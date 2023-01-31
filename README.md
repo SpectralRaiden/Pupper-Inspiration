@@ -1,33 +1,27 @@
-# Mood-Music-Selector
+# PUPPER Inspiration
 
-https://spectralraiden.github.io/Music-Selector-with-Quotes/
+## Where You Can Find Us
+https://spectralraiden.github.io/Pupper-Inspiration
 
 ## User Story
-
 ```
 AS A webpage user 
-I WANT to find dynamically created inspirational quotes and the ability to choose music from Spotify
-SO THAT I can find inspiration while listening to selected music 
+I WANT to generate a random dog pic along with a random inspirational quote
+SO THAT I can find inspiration while browsing photos of dogs
 ```
 ## Acceptance Criteria
 ```
-GIVEN I want to choose music 
-WHEN I utilize the Spotify API
-GIVEN I want a random, inspirational quote
-WHEN I select a new music option
-GIVEN I want well designed webpage elements
-WHEN I have a static background image, centered text and webpage elements
-GIVEN I want webpage interactivity
-WHEN I can select music, toggle between light and dark modes, and be provided a new quote with each new song selection
+GIVEN I want to get a random dog picture and inspirational quote
+WHEN I click a button on the site
 ```
 
-## Screenshot of Webpage
+## Site Screenshot
 ```
 ```
 
 ## Description
 ```
-This webpage allows users to interact with Spotify's API to listen to music, while dynamically generating random insprational quotes when the user changes songs on the webpage. 
+This website allows users to generate a random dog picture as well as a random quote to go along with it, because who honestly hasn't found some spark of inspiration while playing with their pupper at some time or another.
 ```
 ## Credits
 ```
