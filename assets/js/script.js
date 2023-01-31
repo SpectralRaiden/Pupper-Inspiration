@@ -1,4 +1,7 @@
 const api_url = "https://zenquotes.io/api/random/";
+
+const api_url ="https://zenquotes.io/api/random/";
+
 const div = document.querySelector('.quote-list');
 
 async function getapi(url) {
@@ -43,6 +46,7 @@ openModal.addEventListener("click", function () {
 closeModal.addEventListener("click", function () {
   document.querySelector(".bgmodal").style.display = 'none';
 });
+
 
 var nameInput = document.getElementById('name');
 var emailInput = document.getElementById('email');
