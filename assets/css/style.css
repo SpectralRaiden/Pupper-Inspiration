@@ -86,8 +86,8 @@ footer p {
 
 .contact a:hover {
     background-color: #ddd;
-    transition: 0.4s;
     color: black;
+    transition: 0.4s;
     border-radius: 5px;
 }
 
@@ -120,14 +120,15 @@ label {
     padding-left: 9px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     outline: none;
     resize: none;
     border: none;
-    border-bottom:  1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
 }
 
 .bgmodal {
@@ -152,7 +153,8 @@ input, textarea {
     border-radius: 10px;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,
+textarea:focus {
     border-bottom: 1px solid black;
 }
 
@@ -179,13 +181,29 @@ input[type="text"]:focus, textarea:focus {
 }
 
 button {
-    /* width: 30%; */
+    width: 60%;
+    border-radius: 4px;
 }
 
-/* .randomDog {
+#clickMe:hover {
+    background-color: grey;
+    color: black;
+}
+
+#clickMe:active {
+    background-color: grey;
+    transform: translateY(4px);
+}
+
+#clickButton {
+    width: 80%;
+    border-radius: 4px;
+}
+
+.randomDog {
     width: 500px;
     height: 500px;
-} */
+}
 
 
 @media screen and (max-width: 840px) {

@@ -25,21 +25,16 @@
         <h2>Music Selector With Quotes</h2>
         <h2>Tunes with Inspiration</h2>
 
-        <section id="spot-pl">
-            <h2>Make a selection:</h2>
-            <div id="embed-iframe"></div>
-            <!-- this div is where the Spotify API playlist will go? -->
-            <div id="playbox"></div>
+        <section>
+            <button id="clickButton">Click Me For Random Dog Image</button>
+            <img id="image">
             <section id="insp-Quotes">
                 <p>Select a song for a quote or click the button below:</p>
                 <!-- quotes will output & display in div -->
-                <div class="quote-list"></div>
+                <div id="quote" class="quote-list"></div>
             </section>
         </section>
     </main>
-    <!-- <button id="clickButton"></button>
-    <img id="image">
-    <div id="catFact"></div> -->
 
     <!-- add horizontal rule in CSS -->
     <footer>
@@ -59,8 +54,8 @@
         </div>
         <div class="contact">
             <p>Contact Us</p>
-            <button class="openModal">Click Me</button>
-            <form class="bgmodal">
+            <button id="clickMe" class="openModal">Click Me</button>
+            <form id="form" class="bgmodal">
                 <div class="modalContent">
                     <div class="close" id="closeModal">+</div>
                     <h1>Contact Us</h1>
@@ -74,7 +69,8 @@
                     <label for="name">Message:</label>
                     <textarea type="text" id="message" placeholder="Message" rows="6"></textarea>
 
-                    <button class="sendMessage">Send Message</button>
+                    <button type="submit" class="sendMessage">Send Message</button>
+                    <div id="replaceText">Check Console After Submitting</div>
                 </div>
             </form>
         </div>
