@@ -117,7 +117,8 @@ textarea {
 .bgmodal {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
+    overflow: auto;
     bottom: 0;
     left: 0;
     right: 0;
