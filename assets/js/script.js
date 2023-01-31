@@ -6,7 +6,7 @@ async function getapi(url) {
   var data = await response.json();
   console.log(data[0].q);
 
-  div.innerHTML += `<div>${data[0].q}</div>`;
+  div.innerHTML = `<div>${data[0].q}</div>`;
 }
 
 var requestUrl = 
