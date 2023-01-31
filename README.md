@@ -3,6 +3,8 @@
 ## Where You Can Find Us
 https://spectralraiden.github.io/Pupper-Inspiration
 
+<img src="./assets/images/page.png" width="500" height="500"> 
+
 ## User Story
 ```
 AS A webpage user 
