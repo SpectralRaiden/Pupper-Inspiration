@@ -11,6 +11,10 @@ async function getapi(url) {
 
 getapi(api_url);
 
+document.querySelector('clickButton').addEventListener('click', () => {
+    getapi(api_url);
+  });
+  
 var requestUrl = 
 'https://dog.ceo/api/breeds/image/random';
 
