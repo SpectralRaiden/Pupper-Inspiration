@@ -23,7 +23,6 @@ clickButton.addEventListener("click", function () {
       return response.json();
   })
   .then(function (data) {
-    console.log(data)
     display_image(data.message)
     image.classList.add('randomDog');
   })
