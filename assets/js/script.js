@@ -9,12 +9,6 @@ async function getapi(url) {
   div.innerHTML += `<div>${data[0].q}</div>`;
 }
 
-getapi(api_url);
-
-document.querySelector('clickButton').addEventListener('click', () => {
-    getapi(api_url);
-  });
-  
 var requestUrl = 
 'https://dog.ceo/api/breeds/image/random';
 
@@ -29,6 +23,7 @@ clickButton.addEventListener("click", function () {
   .then(function (data) {
     display_image(data.message)
     image.classList.add('randomDog');
+    getapi(api_url);
   })
 });
 
