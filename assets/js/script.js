@@ -1,7 +1,4 @@
 const api_url = "https://zenquotes.io/api/random/";
-
-const api_url ="https://zenquotes.io/api/random/";
-
 const div = document.querySelector('.quote-list');
 
 async function getapi(url) {
