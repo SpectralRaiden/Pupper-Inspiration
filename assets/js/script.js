@@ -1,5 +1,11 @@
 const api_url = "https://zenquotes.io/api/random/";
 const div = document.querySelector('.quote-list');
+var openModal = document.querySelector(".openModal");
+var closeModal = document.querySelector("#closeModal");
+var modal = document.querySelector("#form");
+var nameInput = document.getElementById('name');
+var emailInput = document.getElementById('email');
+var messageInput = document.getElementById('message');
 
 async function getapi(url) {
   const response = await fetch(url);
@@ -9,11 +15,10 @@ async function getapi(url) {
   div.innerHTML = `<div>${data[0].q}</div>`;
 }
 
-var requestUrl = 
-'https://dog.ceo/api/breeds/image/random';
-
 var clickButton = document.getElementById('clickButton');
 var image = document.getElementById("image");
+
+var requestUrl = 'https://dog.ceo/api/breeds/image/random';
 
 clickButton.addEventListener("click", function () {
   fetch(requestUrl)
@@ -31,9 +36,6 @@ function display_image(img) {
  document.getElementById("image").src = img;
 }
 
-var openModal = document.querySelector(".openModal");
-var closeModal = document.querySelector("#closeModal");
-
 openModal.addEventListener("click", function () {
   document.querySelector(".bgmodal").style.display = 'flex';
 });
@@ -42,10 +44,11 @@ closeModal.addEventListener("click", function () {
   document.querySelector(".bgmodal").style.display = 'none';
 });
 
-
-var nameInput = document.getElementById('name');
-var emailInput = document.getElementById('email');
-var messageInput = document.getElementById('message');
+window.onclick = function(event) {
+  if (event.target === modal) {
+    document.querySelector(".bgmodal").style.display = "none";
+  }
+}
 
 document.querySelector('.bgmodal').addEventListener('submit', function (event) {
   event.preventDefault();
