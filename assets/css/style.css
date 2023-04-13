@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Vinyl&display=swap');
 
+
 body {
     background: url("../images/background.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -8,9 +9,11 @@ body {
     flex-direction: column;
 }
 
+
 main {
     margin-top: -69px;
 }
+
 
 hgroup {
     background-color: rgba(0, 0, 0, 0.4);
@@ -18,20 +21,24 @@ hgroup {
     font-family:'Permanent Marker', Arial, Helvetica, sans-serif;
 }
 
+
 hgroup p {
     text-transform: uppercase;
     font-size: 22px;
 }
+
 
 a {
     text-decoration: none;
     color: white;
 }
 
+
 header {
     text-align: center;
     font-size: 50px;
 }
+
 
 footer {
     text-align: center;
@@ -40,11 +47,13 @@ footer {
     width: 100%;
 }
 
+
 footer p {
     color: white;
     text-align: center;
     text-decoration: underline;
 }
+
 
 .socialMedia {
     display: inline-block;
@@ -55,12 +64,14 @@ footer p {
     margin-right: 25px;
 }
 
+
 .socialMedia a:hover {
     background-color: #ddd;
     transition: 0.4s;
     color: black;
     border-radius: 5px;
 }
+
 
 .contact {
     display: inline-block;
@@ -71,6 +82,7 @@ footer p {
     margin-left: 45px;
 }
 
+
 .contact a:hover {
     background-color: #ddd;
     color: black;
@@ -78,23 +90,28 @@ footer p {
     border-radius: 5px;
 }
 
+
 .copyright {
     text-align: center;
     padding-right: 135px;
 }
 
+
 h2 {
     text-align: center;
 }
+
 
 .follow {
     line-height: 25px;
 }
 
+
 form {
     text-align: center;
     border-radius: 5px;
 }
+
 
 label {
     display: block;
@@ -102,6 +119,7 @@ label {
     text-align: left;
     padding-left: 9px;
 }
+
 
 input,
 textarea {
@@ -113,6 +131,7 @@ textarea {
     border: none;
     border-bottom: 1px solid #d3d3d3;
 }
+
 
 .bgmodal {
     height: 100%;
@@ -128,6 +147,7 @@ textarea {
     display: none;
 }
 
+
 .modalContent {
     width: 600px;
     height: 600px;
@@ -136,10 +156,12 @@ textarea {
     border-radius: 10px;
 }
 
+
 input[type="text"]:focus,
 textarea:focus {
     border-bottom: 1px solid black;
 }
+
 
 .sendMessage {
     width: 90%;
@@ -150,6 +172,7 @@ textarea:focus {
     font-size: 17px;
 }
 
+
 .close {
     position: absolute;
     top: 0;
@@ -159,36 +182,73 @@ textarea:focus {
     transform: rotate(45deg);
 }
 
+
 .errorBorder {
     border-bottom: 1px solid red;
 }
+
 
 button {
     width: 60%;
     border-radius: 4px;
 }
 
+
 #clickMe {
     margin-left: 30px;
     transition: 0.4s;
 }
+
 
 #clickMe:hover {
     background-color: grey;
     color: black;
 }
 
+
 #clickMe:active {
     background-color: grey;
     transform: translateY(4px);
 }
 
+
 .centerButton {
-    display: flex;
-    margin-bottom: 15px;
+    /* display: flex; */
+    width: 400px;
+    margin: auto auto 15px auto;
+    position: relative;
+    height: 3rem;
+
+}
+
+.centerButton:hover #clickButton2 {
+    display: block;
+}
+
+#clickButton2 {
+    background: linear-gradient(45deg,#00ccff,black 20%,black 80%,#d400d4);
+    color: white;
+    inset: -3px;
+    border: none;
+    height: 3rem;
+    width: 400px;
+    display: none;
+    filter: brightness(5);
 }
 
 #clickButton {
+    background: #000;
+    color: white;
+    width: 45%;
+    position: absolute;
+    width: 390px;
+    height: 2.5rem;
+    left: 4px;
+    top: 5px;
+}
+
+
+/* #clickButton {
     margin: auto;
     width: 15%;
     border-radius: 4px;
@@ -196,10 +256,12 @@ button {
     box-shadow: 10px 5px 5px black;
 }
 
+
 #clickButton:active {
-    background-color: grey;
+    background-color: pink;
     transform: translateY(4px);
-}
+} */
+
 
 .randomDog {
     width: 500px;
@@ -212,6 +274,7 @@ button {
     box-shadow: 10px 5px 5px black;
 }
 
+
 #quote {
     background-color: #ddd;
     color: black;
@@ -221,11 +284,13 @@ button {
     box-shadow: 10px 5px 5px black;
 }
 
+
 .box {
     display: flex;
     align-items: center;
     justify-content: center
 }
+
 
 @media screen and (max-width: 840px) {
     footer {
@@ -234,6 +299,7 @@ button {
         align-items: center;
     }
 }
+
 
 @media screen and (max-width: 450px) {
     nav,
